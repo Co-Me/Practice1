@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Поиск инвертированных пар подстрок</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Поиск инвертированных пар подстрок</h1>
+	</header>
+	<form id="form">
+		<label for="input">Строка для поиска:</label>
+		<input type="text" id="input" name="input" placeholder="Например: '123abccba321'">
+		<button type="button" id="submit" onclick="findPairs()">Искать!</button>
+	</form>
+    <results>
+        <h2>Результат: </h2>
+        <p id="result"></p>
+    </results>
+    <script src="invertedPairs.js"></script>
+    <script src="formScrips.js"></script>
+</body>
+</html>
