@@ -1,7 +1,7 @@
 let n = 1;
 function findPairs() {
     n = 1;
-    document.getElementById("result").innerHTML = '';
+    document.getElementById("result").innerHTML = "";
     let text = deleteNonAlphaAndNum(document.getElementById("input").value);
     let index = 0;
     console.log(text);
