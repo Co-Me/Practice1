@@ -59,7 +59,6 @@ function deleteNonAlphaAndNum(text){
 }
 
 function isAlphaOrNum(ch){
-     return (ch >= "a" && ch <= "z" || ch >= "A" && ch <= "Z" ||
-             ch >= "а" && ch <= "я" || ch >= "А" && ch <= "Я" ||
-             ch >= "0" && ch <= "9");
+    const regex = /^[a-zA-Z0-9а-яА-Я]+$/;;
+    return regex.test(ch);
 }
