@@ -1,0 +1,31 @@
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+    align-self: center;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+button:active{
+    background-color: #2B8E20
+}
+
+header {
+	color: white;
+	padding: 20px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 36px;
+}
+
+body {
+	background-color: #444444;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+    font-weight: bold;
+}
