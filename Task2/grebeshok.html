@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Гребешок</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="menu-page">
+    	<header>
+    		<h1>Гребешок</h1>
+	    </header>
+	    <rules>
+            <h2 class="rules">Правила:</h2>
+    	    <p class="rules">
+	            Запишите в текстовом поле несколько букв (начать можно с двух или с трёх), либо нажмите кнопку "Случайные буквы", чтобы сгенерировать их     автоматически. Необходимо придумать как можно больше слов, в которых встречаются эти буквы. Буквы можно менять местами.
+    	    </p>
+    	</rules>
+    	<form id="letters-form">
+    		<label for="letters-input">Введите буквы подряд без пробелов</label>
+    		<input type="text" id="letters-input" oninput="validateLettersInput(event)">
+	    	<button type="button" id="start-button" onclick="startGame()">Играть!</button>
+    	</form>
+    </div>
+    <div id="game-page" style="display: none;">
+        <button id="return-button" onclick="returnToMenu()">Вернуться в меню</button>
+        <div id="game-container">
+            <h2 id="letters-list">Список букв: </h2>
+            <form id="words-form">
+    		    <label for="words-input">Введите слово</label>
+    		    <input type="text" id="words-input" oninput="validateWordsInput(event)">
+	    	    <button type="button" id="guess-button" onclick="checkWord()">Ответить!</button>
+    	    </form>
+            <results>
+                <h2>Отгаданные слова: </h2>
+                <p id="guessed-words"></p>
+            </results>
+        </div>
+    </div>
+    <script src="elements.js"></script>
+    <script src="grebeshok.js"></script>
+    <script src="controlButtons.js"></script>
+    <script src="inputValidation.js"></script>
+    <script src="formScript.js"></script>
+</body>
+</html>

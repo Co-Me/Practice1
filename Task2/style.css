@@ -1,0 +1,62 @@
+input[type=text] {
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	box-sizing: border-box;
+    background-color: #666666;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	width: 400px;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+
+}
+
+button:active{
+    background-color: #2B8E20
+}
+
+header {
+	color: white;
+	padding: 20px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 36px;
+}
+
+results {
+    color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+
+body {
+	background-color: #444444;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+    font-weight: bold;
+}
+
+label {
+	font-size: 20px;
+}
+
+p[class="rules"]{
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+h2[class="rules"]{
+    margin-bottom: 5px;
+}

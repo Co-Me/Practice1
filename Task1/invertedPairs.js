@@ -1,7 +1,7 @@
 let n = 1;
 function findPairs() {
     n = 1;
-    document.getElementById("result").innerHTML = '';
+    document.getElementById("result").innerHTML = "";
     let text = deleteNonAlphaAndNum(document.getElementById("input").value);
     let index = 0;
     console.log(text);
@@ -59,7 +59,6 @@ function deleteNonAlphaAndNum(text){
 }
 
 function isAlphaOrNum(ch){
-     return (ch >= "a" && ch <= "z" || ch >= "A" && ch <= "Z" ||
-             ch >= "а" && ch <= "я" || ch >= "А" && ch <= "Я" ||
-             ch >= "0" && ch <= "9");
+    const regex = /^[a-zA-Z0-9а-яА-Я]+$/;;
+    return regex.test(ch);
 }
