@@ -1,6 +1,4 @@
-let n = 1;
 function findPairs() {
-    n = 1;
     document.getElementById("result").innerHTML = "";
     let text = deleteNonAlphaAndNum(document.getElementById("input").value);
     let index = 0;
@@ -42,8 +40,7 @@ function findInvariant(text, index){
 }
 
 function writeResult(text, first, last, len){
-    document.getElementById("result").innerHTML += n + ") " + text.slice(first, first + len) + ' ' + text.slice(last, last + len) + "<br>";
-    n++;
+    document.getElementById("result").innerHTML += "<li>" + text.slice(first, first + len) + ' ' + text.slice(last, last + len) + "</li>";
 }
 
 function deleteNonAlphaAndNum(text){

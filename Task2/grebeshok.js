@@ -21,5 +21,5 @@ function checkWord(){
 }
 
 function writeResult(result){
-    guessedWords.innerHTML += result + "<br>";
+    guessedWords.innerHTML += "<li>" + result + "</li>";
 }
